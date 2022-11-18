@@ -1,6 +1,7 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:gnews/bloc/bottom_navbar_bloc.dart';
+import 'package:gnews/screens/tabs/home_screen.dart';
 import 'package:gnews/style/theme.dart' as Style;
 
 class HomePage extends StatefulWidget {
@@ -43,7 +44,7 @@ class _HomePageState extends State<HomePage> {
           builder: (BuildContext context, AsyncSnapshot<NavBarItem> snapshot) {
             switch (snapshot.data) {
               case NavBarItem.HOME:
-                return testScreen();
+                return HomeScreen();
               case NavBarItem.SOURCES:
                 return testScreen();
               case NavBarItem.SEARCH:
@@ -66,16 +67,16 @@ class _HomePageState extends State<HomePage> {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey,
+                  color: Color(0xFFF5F5F5),
                   spreadRadius: 0,
-                  blurRadius: 10.0,
-                )
+                  blurRadius: 10,
+                ),
               ],
             ),
             child: ClipRRect(
               borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(30.0),
-                topRight: Radius.circular(30.0),
+                topLeft: Radius.circular(0.0),
+                topRight: Radius.circular(0.0),
               ),
               child: BottomNavigationBar(
                 backgroundColor: Colors.white,
