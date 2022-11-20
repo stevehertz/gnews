@@ -62,7 +62,7 @@ class _TopChannelsState extends State<TopChannels> {
           itemCount: sources.length,
           itemBuilder: (context, index) {
             return Container(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 top: 10.0,
               ),
               width: 80.0,
@@ -78,7 +78,7 @@ class _TopChannelsState extends State<TopChannels> {
                         height: 50.0,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               color: Colors.black12,
                               blurRadius: 5.0,
@@ -94,28 +94,28 @@ class _TopChannelsState extends State<TopChannels> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10.0,
                     ),
                     Text(
                       sources[index].name!,
                       maxLines: 2,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         height: 1.4,
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 10.0,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 3.0,
                     ),
                     Text(
                       sources[index].category!,
                       maxLines: 2,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.black54,
                         fontSize: 9.0,
                       ),

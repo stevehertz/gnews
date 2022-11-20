@@ -27,6 +27,17 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         TopChannels(),
+        Padding(
+          padding: EdgeInsets.all(10.0),
+          child: Text(
+            "Hot News",
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: 17.0,
+            ),
+          ),
+        )
       ],
     );
   }
