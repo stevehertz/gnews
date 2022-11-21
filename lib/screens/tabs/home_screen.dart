@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gnews/widgets/headline_slider.dart';
+import 'package:gnews/widgets/hot_news.dart';
 import 'package:gnews/widgets/top_channels.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -37,7 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
               fontSize: 17.0,
             ),
           ),
-        )
+        ),
+        HotNews(),
       ],
     );
   }
