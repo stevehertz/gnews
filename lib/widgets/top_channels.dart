@@ -4,6 +4,7 @@ import 'package:gnews/elements/error_element.dart';
 import 'package:gnews/elements/loader_element.dart';
 import 'package:gnews/model/source.dart';
 import 'package:gnews/model/source_response.dart';
+import 'package:gnews/screens/source_detail.dart';
 
 class TopChannels extends StatefulWidget {
   const TopChannels({super.key});
@@ -67,7 +68,13 @@ class _TopChannelsState extends State<TopChannels> {
               ),
               width: 80.0,
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              SourceDetail(source: sources[index])));
+                },
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
