@@ -4,6 +4,7 @@ import 'package:gnews/elements/loader_element.dart';
 import 'package:gnews/model/article.dart';
 import 'package:gnews/model/article_response.dart';
 import 'package:gnews/model/source.dart';
+import 'package:gnews/screens/news_detail.dart';
 import 'package:gnews/style/theme.dart' as Style;
 import 'package:timeago/timeago.dart' as timeago;
 
@@ -150,7 +151,14 @@ class _SourceDetailState extends State<SourceDetail> {
         itemCount: articles.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NewsDetail(article: articles[index]),
+                ),
+              );
+            },
             child: Container(
               decoration: const BoxDecoration(
                 border: Border(

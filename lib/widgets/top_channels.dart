@@ -48,7 +48,7 @@ class _TopChannelsState extends State<TopChannels> {
       return Container(
         width: MediaQuery.of(context).size.width,
         child: Column(
-          children: [
+          children: const [
             Text(
               "No sources",
             )
