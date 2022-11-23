@@ -2,6 +2,7 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:gnews/bloc/bottom_navbar_bloc.dart';
 import 'package:gnews/screens/tabs/home_screen.dart';
+import 'package:gnews/screens/tabs/search_screen.dart';
 import 'package:gnews/screens/tabs/source_screen.dart';
 import 'package:gnews/style/theme.dart' as Style;
 
@@ -49,7 +50,7 @@ class _HomePageState extends State<HomePage> {
               case NavBarItem.SOURCES:
                 return SourceScreen();
               case NavBarItem.SEARCH:
-                return testScreen();
+                return SearchScreen();
               default:
                 return testScreen();
             }
