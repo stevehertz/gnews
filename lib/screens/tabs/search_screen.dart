@@ -121,7 +121,7 @@ class _SearchScreenState extends State<SearchScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
+          children: const <Widget>[
             Text(
               "No more news",
               style: TextStyle(
@@ -147,7 +147,7 @@ class _SearchScreenState extends State<SearchScreen> {
               );
             },
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 border: Border(
                   top: BorderSide(
                     color: Color(0xFFEEEEEE),
@@ -160,7 +160,7 @@ class _SearchScreenState extends State<SearchScreen> {
               child: Row(
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       top: 10.0,
                       left: 10.0,
                       bottom: 10.0,
